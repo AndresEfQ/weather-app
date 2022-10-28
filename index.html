@@ -5,17 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
   <title>Weather app</title>
 </head>
 <body>
   <div class="container">
     <form action="#">
-      <label for="city">Choose a city</label>
-      <input type="text" id="city" name="city">
-      <button type="button">°C</button>
+      <div>
+        <label for="city">Choose a city</label>
+        <input type="text" id="city" name="city">
+      </div>
+      <button type="button">Temp in °F</button>
     </form>
-    <div class="outcast"></div>
-    <div class="hourly"></div>
+    <div class="outcast">
+      <h2 id="weather_name">Broken Clouds</h2>
+      <h6 id="city_name">Medellín</h6>
+      <h6 id="date">Saturday, 29th Oct 22</h6>
+      <h6 id="time">2:17 am</h6>
+      <h1 id="temperature">17 °C</h1>
+      <img id="main_icon" src="./assets/SVG/cloudy.svg" alt="weather">
+    </div>
+    <div class="daily">
+      <div class="day">
+        <h3 class="daily_day-name">Sunday</h3>
+        <h2 class="daily_temp">18 °C</h2>
+        <p class="daily_min-temp">15 °C</p>
+        <div class="daily_img"><img class="daily_icon" src="./assets/SVG/sun.svg" alt="day-weather"></div>
+      </div>
+      <div class="day">
+        <h3 class="daily_day-name">Monday</h3>
+        <h2 class="daily_temp">18 °C</h2>
+        <p class="daily_min-temp">15 °C</p>
+        <div class="daily_img"><img class="daily_icon" src="./assets/SVG/moon.svg" alt="day-weather"></div>
+      </div>
+      <div class="day">
+        <h3 class="daily_day-name">Tuesday</h3>
+        <h2 class="daily_temp">18 °C</h2>
+        <p class="daily_min-temp">15 °C</p>
+        <div class="daily_img"><img class="daily_icon" src="./assets/SVG/rainy.svg" alt="day-weather"></div>
+      </div>
+      <div class="day">
+        <h3 class="daily_day-name">Wednesday</h3>
+        <h2 class="daily_temp">18 °C</h2>
+        <p class="daily_min-temp">15 °C</p>
+        <div class="daily_img"><img class="daily_icon" src="./assets/SVG/snow.svg" alt="day-weather"></div>
+      </div>
+      <div class="day">
+        <h3 class="daily_day-name">Thursday</h3>
+        <h2 class="daily_temp">18 °C</h2>
+        <p class="daily_min-temp">15 °C</p>
+        <div class="daily_img"><img class="daily_icon" src="./assets/SVG/mist.svg" alt="day-weather"></div>
+      </div>
+    </div>
     <footer>
       Copyright © 2022 AndresEfQ<a href="https://github.com/AndresEfQ"><img src="./assets/github" alt="github"></a>
     </footer>
