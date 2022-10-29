@@ -60,6 +60,7 @@ button:hover {
   font-size: 1.5rem;
   margin-top: auto;
   height: 45%;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
